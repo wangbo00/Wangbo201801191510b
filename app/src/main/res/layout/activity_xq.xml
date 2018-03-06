@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:id="@+id/ll"
+        >
+        <VideoView
+            android:id="@+id/vv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ></VideoView>
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll"
+        >
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/goods_img"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            fresco:placeholderImage="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/goods_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="按时打算打算大撒打算打算打算的" />
+
+            <TextView
+                android:id="@+id/goods_prices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$199999" />
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是商家" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/add_btn"
+            android:text="加入购物车"
+            android:background="#f00"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="立即购买"
+            android:background="#efaf0d"
+            android:layout_weight="1"
+            android:textColor="#fff"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

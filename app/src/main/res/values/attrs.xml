@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AddDeleteViewStyle">
+        <attr name="left_text" format="string"></attr>
+        <attr name="right_text" format="string"></attr>
+        <attr name="middle_text" format="string"></attr>
+        <attr name="left_text_color" format="color"></attr>
+    </declare-styleable>
+</resources>
